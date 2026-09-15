@@ -1,0 +1,11 @@
+#wap to input a decimal no and convert it into binary without using bulit bin()fun
+n = int(input("Enter a decimal number: "))
+
+binary = ""
+
+while n > 0:
+    rem = n % 2
+    binary = str(rem) + binary
+    n = n // 2
+
+print("Binary:", binary)
